@@ -1,0 +1,59 @@
+html {
+    font: 400 #{$font-size}/1.333 $source;
+    @media screen and (min-width: #{$break-big}) {
+        font-size: floor($font-size * $scale-fraction-inverse);
+    }
+}
+a, a:visited {
+    outline: none;
+    text-decoration: underline;
+    &:hover {
+        text-decoration: none;
+    }
+}
+h1, h2, h3, h4, h5, h6 {
+    
+}
+h1 {
+    @include rem(font-size, 24px);
+}
+p {
+
+}
+blockquote {
+    
+}
+ul, ol {
+    margin-left: 1.777em;
+}
+ul {
+    list-style-type: disc;
+}
+ol {
+    list-style-type: decimal;
+}
+nav ul, nav ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+strong {
+    font-weight: bold;
+}
+em {
+    font-style: italic;
+}
+small, sub, sup {
+    font-size: 75%;
+}
+sub, sup {
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+sup {
+    top: -0.5em;
+}
+sub {
+    bottom: -0.25em;
+}

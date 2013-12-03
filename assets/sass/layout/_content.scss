@@ -1,0 +1,13 @@
+section.content {
+    // Here's where all important matter will be held.
+    article {
+        @media screen and (min-width: #{$break-small}) {
+            @include column(12,16);
+        }
+    }
+    aside {
+        @media screen and (min-width: #{$break-small}) {
+            @include column(4,16);
+        }
+    }
+}

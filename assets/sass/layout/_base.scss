@@ -1,0 +1,23 @@
+body {
+    min-height: 100%;
+}
+
+// custom resets
+// -------------
+:focus {
+    outline: none;
+}
+::-moz-focus-inner {
+    border: 0;
+}
+img, embed, object, video {
+    max-width: 100%;
+}
+::selection {
+    color: $white;
+    background-color: $crimson;
+}
+::-moz-selection {
+    color: $white;
+    background-color: $crimson;
+}
