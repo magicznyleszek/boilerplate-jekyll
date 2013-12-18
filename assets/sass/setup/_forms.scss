@@ -1,0 +1,13 @@
+form {
+    input, select, textarea, button {
+        font: inherit;
+    }
+    input, ul {
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        list-style: none;
+    }
+
+}

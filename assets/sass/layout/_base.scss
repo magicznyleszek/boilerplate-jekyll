@@ -2,6 +2,16 @@ body {
     min-height: 100%;
 }
 
+a {
+    color: $crimson;
+    &:visited {
+        color: $violet;
+    }
+    &:hover {
+        color: $cardinal;
+    }
+}
+
 // custom resets
 // -------------
 :focus {
