@@ -2,11 +2,25 @@ form {
     input, select, textarea, button {
         font: inherit;
     }
+    textarea {
+        resize: vertical;
+    }
     input, ul {
         margin: 0;
         padding: 0;
     }
     li {
         list-style: none;
+    }
+    input {
+        @mixin input-placeholder {
+            &:-moz-placeholder {@content;}
+            &::-moz-placeholder {@content;}
+            &:-ms-input-placeholder {@content;}
+            &::-webkit-input-placeholder {@content;} 
+        }
+        @include input-placeholder {
+            color: rgba($white, 0.8)
+        }
     }
 }
