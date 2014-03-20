@@ -1,9 +1,11 @@
-{% include header.html %}
+{% include html-begin.liquid %}
+{% include page-header.liquid %}
 
-    <section class="content" role="main" id="main">
+    <section class="page-content" role="main">
         
         {{ content }}
 
     </section>
 
-{% include footer.html %}
+{% include page-footer.liquid %}
+{% include html-end.liquid %}
