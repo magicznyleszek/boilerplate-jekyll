@@ -1,0 +1,21 @@
+{% include html-begin.liquid %}
+{% include page-header.liquid %}
+
+    <section class="page-content" role="main">
+        
+        <h1>{{ page.category }}</h1>
+
+        <ul>
+            {% for dinosaur in site.data.dinosaurs %}
+                {% if dinosaur.categories contains page.category %}
+                    <li>
+                        <a href="{{ dinosaur.url }}">{{ dinosaur.name }}</a>
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+
+    </section>
+
+{% include page-footer.liquid %}
+{% include html-end.liquid %}

@@ -1,0 +1,17 @@
+{% include html-begin.liquid %}
+{% include page-header.liquid %}
+
+    <section class="page-content page-content-single-post" role="main">
+        
+        <h1>{{ page.title }}</h1>
+
+        {{ content }}
+
+        <footer class="single-post-meta">
+            <time datetime="{{ page.date }}"><i class="fa fa-clock-o"></i> {{ page.date | date: "%B %Y" }}</time>
+        </footer>
+
+    </section>
+
+{% include page-footer.liquid %}
+{% include html-end.liquid %}
