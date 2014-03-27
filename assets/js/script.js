@@ -1,15 +1,21 @@
 function projectInterface() {
-    this.init = init;
-    function init() {
-        // initialize your functions here
+    // declare a public run function
+    this.run = run;
+    function run() {
+        // initialize all functions here
         doSomething();
     }
-    // create your functions here
+
+    // --------------------------------------------------
+    // this does something because something
+    // --------------------------------------------------
     function doSomething() {
         if(true === true) {
             console.log("truth");
         }
     }
 }
+// create a public object
 var knowYourDinosaurs = new projectInterface();
-knowYourDinosaurs.init();
+// run functions
+knowYourDinosaurs.run();
