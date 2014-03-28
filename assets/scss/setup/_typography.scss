@@ -1,7 +1,10 @@
 html {
-    font: 400 #{$font-size}/1.333 $source;
-    @media screen and (min-width: #{$break-big}) {
-        font-size: floor($font-size * $scale-fraction-inverse);
+    font: 400 #{$fontSize}/1.333 $source;
+    @media screen and (min-width: #{$breakBig}) {
+        font-size: floor($fontSizeBig);
+    }
+    @media screen and (max-width: #{$breakSmall}) {
+        font-size: floor($fontSizeSmall);
     }
 }
 
@@ -23,11 +26,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: rem(40px);
+    font-size: 3rem;
 }
 
 h2 {
-    font-size: rem(20px);
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
 }
 
 p {
@@ -62,6 +69,10 @@ strong {
 
 em {
     font-style: italic;
+}
+
+code {
+    font-family: $code;
 }
 
 small, sub, sup {

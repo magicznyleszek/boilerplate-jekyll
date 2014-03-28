@@ -9,7 +9,6 @@ Location: city, country
 
 Dave Gandy: fontawesome.io
 Christopher Eppstein: compass-style.org
-Faruk Ateş: modernizr.com
 John Resig: jquery.com
 Name: url/email
 
