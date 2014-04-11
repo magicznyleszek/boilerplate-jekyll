@@ -5,12 +5,14 @@ Site: url
 Email: email
 Location: city, country
 
+
 ## THANKS
 
+Tom Preston-Werner, Nick Quaranto: jekyllrb.com
 Dave Gandy: fontawesome.io
 Christopher Eppstein: compass-style.org
-John Resig: jquery.com
 Name: url/email
+
 
 ## SITE
 

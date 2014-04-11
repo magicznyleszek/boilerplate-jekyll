@@ -4,5 +4,8 @@ _site
 ## ignore compass cache
 .sass-cache
 
+## ignore compiled css
+assets/css
+
 ## please do
 .wild-trilobites

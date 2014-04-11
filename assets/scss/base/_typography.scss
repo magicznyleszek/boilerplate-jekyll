@@ -1,5 +1,5 @@
 html {
-    font: 400 #{$fontSize}/1.333 $source;
+    font: 400 #{$baseFontSize}/#{$baseLineHeight} $baseFontFamily;
     @media screen and (min-width: #{$breakBig}) {
         font-size: floor($fontSizeBig);
     }
@@ -8,21 +8,8 @@ html {
     }
 }
 
-a {
-    color: $crimson;
-    outline: none;
-    text-decoration: underline;
-    &:visited {
-        color: $violet;
-    }
-    &:hover {
-        color: $cardinal;
-        text-decoration: none;
-    }
-}
-
 h1, h2, h3, h4, h5, h6 {
-    
+    line-height: 1;
 }
 
 h1 {
@@ -37,8 +24,10 @@ h3 {
     font-size: 1.5rem;
 }
 
-p {
-
+p, ol, ul, blockquote, h1, h2, h3, h4, h5, h6 {
+    &:not(:first-child) {
+        margin-top: $baseLineHeight * 1rem;
+    }
 }
 
 blockquote {
@@ -46,7 +35,7 @@ blockquote {
 }
 
 ul, ol {
-    margin-left: 1.777rem;
+    margin-left: 1.5rem;
 }
 
 ul {
@@ -55,12 +44,6 @@ ul {
 
 ol {
     list-style-type: decimal;
-}
-
-nav ul, nav ol {
-    list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
 strong {
@@ -73,6 +56,21 @@ em {
 
 code {
     font-family: $code;
+    font-size: 0.75%;
+    background-color: rgba($black, 0.1);
+    border: 0.0625rem solid rgba($black, 0.2);
+    padding: 0 0.125rem;
+    @include border-radius(0.25rem);
+}
+
+pre {
+    code {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        @include box-sizing(border-box);
+        padding: 0.5rem;
+    }
 }
 
 small, sub, sup {
@@ -100,30 +98,6 @@ hr {
     padding: 0;
     border: 0;
     width: 100%;
-    height: 1px;
+    height: 0.125rem;
     background-color: $black;
-}
-
-:focus {
-    outline-color: $crimson;
-    outline-style: auto;
-    outline-width: 0.25rem;
-}
-
-::-moz-focus-inner {
-    border: 0;
-}
-
-img, embed, object, video {
-    max-width: 100%;
-}
-
-::selection {
-    color: $white;
-    background-color: $crimson;
-}
-
-::-moz-selection {
-    color: $white;
-    background-color: $crimson;
 }

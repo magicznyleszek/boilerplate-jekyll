@@ -1,0 +1,20 @@
+.button {
+    cursor: pointer;
+    display: inline-block;
+    color: $white;
+    background-color: $crimson;
+    line-height: 2rem;
+    padding: 0 0.5rem;
+    text-decoration: none;
+    border: 0;
+    border-bottom: 0.125rem solid $crimsonDark;
+    &:hover {
+        background-color: $crimsonLight;
+        border-color: $crimson;
+    }
+    &.button-big {
+        font-size: 1.5rem;
+        line-height: 3rem;
+        padding: 0 0.75rem;
+    }
+}
