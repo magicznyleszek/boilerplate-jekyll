@@ -1,10 +1,10 @@
 html {
     font: 400 #{$baseFontSize}/#{$baseLineHeight} $baseFontFamily;
     @media screen and (min-width: #{$breakBig}) {
-        font-size: floor($fontSizeBig);
+        font-size: $fontSizeBig;
     }
     @media screen and (max-width: #{$breakSmall}) {
-        font-size: floor($fontSizeSmall);
+        font-size: $fontSizeSmall;
     }
 }
 
