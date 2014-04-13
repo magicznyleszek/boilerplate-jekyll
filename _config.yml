@@ -1,10 +1,12 @@
 # description
 name: "Title"
 description: "Short description"
+keywords: "foo, bar, fum, baz, qux, zot"
 author: "Leszek Pietrzak"
 
 # address settings
-url: "http://0.0.0.0:4000"
+url: "http://boilerplate.smutnyleszek.com"
+# url: "http://0.0.0.0:4000"
 permalink: /post/:title
 
 # site configuration
