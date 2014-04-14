@@ -20,6 +20,15 @@
 
 
 // --------------------------------------------------
+// helpers and tools used across the project
+// --------------------------------------------------
+
+@import "helpers/columns";
+@import "helpers/functions";
+@import "helpers/mixins";
+
+
+// --------------------------------------------------
 // base resets, fonts and normalizations
 // --------------------------------------------------
 
@@ -27,15 +36,6 @@
 @import "base/print";
 @import "base/typography";
 // @import "base/fonts";
-
-
-// --------------------------------------------------
-// helpers and tools used across the project
-// --------------------------------------------------
-
-@import "helpers/columns";
-@import "helpers/functions";
-@import "helpers/mixins";
 
 
 // --------------------------------------------------
