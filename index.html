@@ -11,7 +11,7 @@ layout: default
         <li>
             <a href="{{ dinosaur.url }}" target="_blank">{{ dinosaur.name }}</a>
             {% for category in dinosaur.categories %}
-                <a href="{{ site.url }}/category/{{ category }}">{{ category }}</a>
+                <a href="{{ site.baseurl }}/category/{{ category }}">{{ category }}</a>
             {% endfor %}
         </li>
     {% endfor %}

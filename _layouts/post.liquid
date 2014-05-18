@@ -11,10 +11,10 @@
             <time datetime="{{ page.date }}"><i class="fa fa-clock-o"></i> {{ page.date | date: "%B %Y" }}</time>
             <section class="adjacent-posts">
                 {% if page.previous.url %}
-                    <a href="{{ site.url }}{{ page.previous.url }}"><i class="fa fa-arrow-left"></i> Previus post</a>
+                    <a href="{{ site.baseurl }}{{ page.previous.url }}"><i class="fa fa-arrow-left"></i> Previus post</a>
                 {% endif %}
                 {% if page.next.url %}
-                    <a href="{{ site.url }}{{ page.next.url }}">Next post <i class="fa fa-arrow-right"></i></a>
+                    <a href="{{ site.baseurl }}{{ page.next.url }}">Next post <i class="fa fa-arrow-right"></i></a>
                 {% endif %}
             </section>
         </footer>

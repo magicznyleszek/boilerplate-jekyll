@@ -5,9 +5,7 @@ keywords: "foo, bar, fum, baz, qux, zot"
 author: "Leszek Pietrzak"
 
 # address settings
-url: "http://boilerplate.smutnyleszek.com"
-# url: "http://0.0.0.0:4000"
-# url: "http://localhost:4000"
+baseurl: "http://boilerplate.smutnyleszek.com"
 permalink: /post/:title
 
 # site configuration
