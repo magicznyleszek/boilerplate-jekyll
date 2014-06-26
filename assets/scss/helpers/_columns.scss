@@ -8,14 +8,14 @@
 // setup
 // --------------------------------------------------
 
-$columns: 16;
+$baseNumber: 16;
 
 
 // --------------------------------------------------
 // define a single or simple-fraction column
 // --------------------------------------------------
 
-@mixin column($amount:$columns, $context:$columns) {
+@mixin column($amount:$baseNumber, $context:$baseNumber) {
     @include box-sizing(border-box);
     display: inline-block;
     width: $amount * (100 / $context) * 1%;
@@ -27,7 +27,7 @@ $columns: 16;
 // create an empty space on the left
 // --------------------------------------------------
 
-@mixin push-left($offset:1, $context:$columns) {
+@mixin columnPush($offset:1, $context:$baseNumber) {
     margin-left: $offset * (100 / $context) * 1%;
 }
 
@@ -36,6 +36,6 @@ $columns: 16;
 // create an empty space on the right
 // --------------------------------------------------
 
-@mixin push-right($offset:1, $context:$columns) {
+@mixin columnPull($offset:1, $context:$baseNumber) {
     margin-right: $offset * (100 / $context) * 1%;
 }
