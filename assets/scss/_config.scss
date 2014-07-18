@@ -5,12 +5,12 @@
 
 $scaleMain: 16;
 $scaleSecondary: 20;
-$scaleFraction: 1/2;
-$scaleFractionInverse: 1/$scaleFraction;
+$scaleFraction: 1 / 2;
+$scaleFractionInverse: 1 / $scaleFraction;
 
 
 // --------------------------------------------------
-// fonts
+// typography and breakpoints font sizes
 // --------------------------------------------------
 
 $source: "Source Sans Pro", sans-serif;
@@ -42,6 +42,11 @@ $sandstoneDarker: shade($sandstone, 90);
 $sandstoneLight: tint($sandstone, 60);
 $sandstoneLighter: tint($sandstone, 90);
 
+// main declarations (for easier change)
+$baseColor: $crimson;
+$baseColorShade: $crimsonDark;
+$baseColorTint: $crimsonLight;
+
 
 // --------------------------------------------------
 // breakpoints and content widths settings
@@ -55,12 +60,16 @@ $breakSmall: 640px;
 // speed
 // --------------------------------------------------
 
-$fast: 0.3s;
+$fastest: 0.125s;
+$faster: 0.25s;
+$fast: 0.5s;
 $slow: 1s;
+$slower: 1.5s;
+$slowest: 2s;
 
 
 // --------------------------------------------------
 // images
 // --------------------------------------------------
 
-$backgroundPattern: url("../img/background-pattern.png");
+$bgPattern: url("../img/background-pattern.png");

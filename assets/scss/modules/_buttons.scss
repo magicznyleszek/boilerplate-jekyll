@@ -2,15 +2,15 @@
     cursor: pointer;
     display: inline-block;
     color: $white;
-    background-color: $crimson;
+    background-color: $baseColor;
     line-height: 2rem;
     padding: 0 0.5rem;
     text-decoration: none;
     border: 0;
-    border-bottom: 0.125rem solid $crimsonDark;
+    border-bottom: 0.125rem solid $baseColorShade;
     &:hover {
-        background-color: $crimsonLight;
-        border-color: $crimson;
+        background-color: $baseColorTint;
+        border-color: $baseColor;
     }
     &.button-big {
         font-size: 1.5rem;
