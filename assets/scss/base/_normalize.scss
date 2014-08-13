@@ -7,10 +7,10 @@ a {
     outline: none;
     text-decoration: underline;
     &:visited {
-        color: $baseColorShade;
+        color: $baseColorDark;
     }
     &:hover {
-        color: $baseColorTint;
+        color: $baseColorLight;
         text-decoration: none;
     }
 }

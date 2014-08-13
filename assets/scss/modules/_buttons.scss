@@ -7,9 +7,9 @@
     padding: 0 0.5rem;
     text-decoration: none;
     border: 0;
-    border-bottom: 0.125rem solid $baseColorShade;
+    border-bottom: 0.125rem solid $baseColorDark;
     &:hover {
-        background-color: $baseColorTint;
+        background-color: $baseColorLight;
         border-color: $baseColor;
     }
     &.button-big {
