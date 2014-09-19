@@ -5,7 +5,7 @@ keywords: "foo, bar, fum, baz, qux, zot"
 author: "Leszek Pietrzak"
 
 # address settings
-baseurl: "http://boilerplate.smutnyleszek.com"
+baseurl: "http://boilerplate-jekyll.smutnyleszek.com"
 permalink: /post/:title
 
 # site configuration
