@@ -1,4 +1,5 @@
-section.page-content {
-    max-width: rem(1280px);
-    margin: auto;
+section.app-content {
+    max-width: $appContentWidth;
+    margin-left: auto;
+    margin-right: auto;
 }

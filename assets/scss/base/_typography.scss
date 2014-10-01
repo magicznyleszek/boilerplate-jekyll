@@ -1,5 +1,5 @@
 html {
-    font: 400 #{$baseFontSize}/#{$baseLineHeight} $baseFontFamily;
+    font: 400 #{$fontSizeMedium}/1.5 $source;
     @media screen and (min-width: #{$breakBig}) {
         font-size: $fontSizeBig;
     }
@@ -7,56 +7,44 @@ html {
         font-size: $fontSizeSmall;
     }
 }
-
 h1, h2, h3, h4, h5, h6 {
     line-height: 1;
 }
-
 h1 {
     font-size: 3rem;
 }
-
 h2 {
     font-size: 2rem;
 }
-
 h3 {
     font-size: 1.5rem;
 }
-
 p, ol, ul, blockquote, h1, h2, h3, h4, h5, h6 {
     &:not(:first-child) {
-        margin-top: $baseLineHeight * 1rem;
+        margin-top: $lineHeight * 1rem;
     }
 }
-
 blockquote {
     font-style: italic;
     cite {
         font-style: normal;
     }
 }
-
 ul, ol {
     margin-left: 1.5rem;
 }
-
 ul {
     list-style-type: disc;
 }
-
 ol {
     list-style-type: decimal;
 }
-
 strong {
     font-weight: bold;
 }
-
 em {
     font-style: italic;
 }
-
 code {
     font-family: $code;
     font-size: 75%;
@@ -65,7 +53,6 @@ code {
     padding: 0 0.125rem;
     @include border-radius(0.25rem);
 }
-
 pre {
     code {
         display: block;
@@ -75,25 +62,20 @@ pre {
         padding: 0.5rem;
     }
 }
-
 small, sub, sup {
     font-size: 75%;
 }
-
 sub, sup {
     line-height: 0;
     position: relative;
     vertical-align: baseline;
 }
-
 sup {
     top: -0.5em;
 }
-
 sub {
     bottom: -0.25em;
 }
-
 hr {
     display: inline-block;
     vertical-align: middle;

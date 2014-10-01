@@ -1,4 +1,5 @@
-footer.page-footer {
-    max-width: rem(1280px);
-    margin: auto;
+footer.app-footer {
+    max-width: $appContentWidth;
+    margin-left: auto;
+    margin-right: auto;
 }

@@ -1,65 +1,29 @@
-// --------------------------------------------------
-// modular scale
-// 4, 5, 8, 10, 16, 20, 32, 40, 64, 80, 128, 160, 256, 320, 512, 640, 1024, 1280, 2048, 2560
-// --------------------------------------------------
-
-$scaleMain: 16;
-$scaleSecondary: 20;
-$scaleFraction: 1 / 2;
-$scaleFractionInverse: 1 / $scaleFraction;
-
-
-// --------------------------------------------------
-// typography and breakpoints font sizes
-// --------------------------------------------------
-
+// typography and font sizes for breakpoints
 $source: "Source Sans Pro", sans-serif;
 $code: "Source Code Pro", monospace;
-
-$baseFontWeight: 400;
-$baseFontSize: 20px;
-$baseLineHeight: 1.5;
-$baseFontFamily: $source;
-
+$fontSizeMedium: 20px;
 $fontSizeBig: 24px;
 $fontSizeSmall: 16px;
 
-
-// --------------------------------------------------
-// colors
-// --------------------------------------------------
-
+// base colors
 $black: rgb(0,0,0);
 $white: rgb(255,255,255);
 
+// additional colors
 $crimson: rgb(240,20,60);
 $crimsonDark: shade($crimson, 15);
 $crimsonLight: tint($crimson, 30);
-
 $sandstone: rgb(120,110,100);
 $sandstoneDark: shade($sandstone, 45);
 $sandstoneDarker: shade($sandstone, 90);
 $sandstoneLight: tint($sandstone, 60);
 $sandstoneLighter: tint($sandstone, 90);
 
-// main declarations (for easier change)
-$baseColor: $crimson;
-$baseColorDark: $crimsonDark;
-$baseColorLight: $crimsonLight;
-
-
-// --------------------------------------------------
 // breakpoints and content widths settings
-// --------------------------------------------------
-
 $breakBig: 1280px;
 $breakSmall: 640px;
 
-
-// --------------------------------------------------
 // speed
-// --------------------------------------------------
-
 $fastest: 0.125s;
 $faster: 0.25s;
 $fast: 0.5s;
@@ -67,9 +31,10 @@ $slow: 1s;
 $slower: 1.5s;
 $slowest: 2s;
 
-
-// --------------------------------------------------
 // images
-// --------------------------------------------------
-
 $bgPattern: url("../img/background-pattern.png");
+
+// z-indexes
+$zIndex0: -1;
+$zIndex1: 10;
+$zIndex2: 20;

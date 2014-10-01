@@ -1,4 +1,5 @@
-header.page-header {
-    max-width: rem(1280px);
-    margin: auto;
+header.app-header {
+    max-width: $appContentWidth;
+    margin-left: auto;
+    margin-right: auto;
 }

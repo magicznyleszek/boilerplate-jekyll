@@ -1,20 +1,18 @@
 body {
     min-height: 100%;
 }
-
 a {
-    color: $baseColor;
+    color: $crimson;
     outline: none;
     text-decoration: underline;
     &:visited {
-        color: $baseColorDark;
+        color: $crimsonDark;
     }
     &:hover {
-        color: $baseColorLight;
+        color: $crimsonLight;
         text-decoration: none;
     }
 }
-
 nav {
     ul, ol {
         list-style: none;
@@ -22,35 +20,28 @@ nav {
         padding: 0;
     }
 }
-
 :focus {
-    outline-color: $baseColor;
+    outline-color: $crimson;
     outline-style: auto;
     outline-width: 0.25rem;
 }
-
 ::-moz-focus-inner {
     border: 0;
 }
-
 img, svg, embed, object, video {
     max-width: 100%;
 }
-
 ::selection {
     color: $white;
-    background-color: $baseColor;
+    background-color: $crimson;
 }
-
 ::-moz-selection {
     color: $white;
-    background-color: $baseColor;
+    background-color: $crimson;
 }
-
 table {
     width: 100%;
 }
-
 form {
     input, select, textarea, button {
         font: inherit;
