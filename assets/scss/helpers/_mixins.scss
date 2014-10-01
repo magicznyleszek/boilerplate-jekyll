@@ -48,11 +48,11 @@
 // --------------------------------------------------
 
 @mixin gradientVertical($colorTop, $colorBottom) {
-    @include background-image(linear-gradient(top, $colorTop, $colorBottom));
+    @include background-image(linear-gradient(180deg, $colorTop, $colorBottom));
 }
 
 @mixin gradientHorizontal($colorLeft, $colorRight) {
-    @include background-image(linear-gradient(left, $colorLeft, $colorRight));
+    @include background-image(linear-gradient(90deg, $colorLeft, $colorRight));
 }
 
 
