@@ -21,7 +21,7 @@ h3 {
 }
 p, ol, ul, blockquote, h1, h2, h3, h4, h5, h6 {
     &:not(:first-child) {
-        margin-top: $lineHeight * 1rem;
+        margin-top: 1.5rem;
     }
 }
 blockquote {
