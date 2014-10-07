@@ -1,16 +1,16 @@
 table.default {
     td, th {
-        border: 0.0625rem solid $sandstoneLight;
+        border: 0.0625rem solid rgba($black, 0.2);
         padding: 0.5rem;
         min-width: 4rem;
         max-width: 25rem;
     }
     th {
-        background-color: $sandstoneLighter;
+        background-color: rgba($black, 0.1);
     }
     tr {
         &:hover {
-            background-color: rgba($sandstoneLighter, 0.5);
+            background-color: rgba($black, 0.05);
         }
     }
     thead {
@@ -30,7 +30,7 @@ table.default {
     tfoot {
         tr {
             &:first-child {
-                border-top: 0.25rem solid $sandstoneLight;
+                border-top: 0.25rem solid $black;
             }
             td {
                 //
