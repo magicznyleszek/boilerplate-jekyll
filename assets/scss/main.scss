@@ -26,10 +26,11 @@
 @import "layout/footer";
 
 // small modules
+@import "modules/boxes";
 @import "modules/buttons";
-
-// page-specific styles, rarely needed
-// @import "pages/contact";
+@import "modules/columns";
+@import "modules/icons";
+@import "modules/lists";
 
 // specific themes for third party modules
 @import "themes/form-default";
