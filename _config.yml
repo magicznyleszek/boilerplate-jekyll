@@ -9,8 +9,11 @@ baseurl: "http://boilerplate-jekyll.smutnyleszek.com"
 permalink: /post/:title
 
 # site configuration
+safe: true
+quiet: false
+future: true
 encoding: utf-8
 markdown: kramdown
-future: true
-safe: true
-paginate: 9000
+kramdown:
+    auto_ids: false
+timezone: Europe/Warsaw
